@@ -27,6 +27,7 @@ canvas{
     left: 10px;
     padding: 10px;
     font-size: 20px;
+    color: black;
     background-color: transparent;
     border: 2px solid black;
     border-radius: 97px;
@@ -49,6 +50,7 @@ canvas{
     font-size: 20px;
     background-color: transparent;;
     border: 2px solid black;
+    color:black;
     border-radius: 97px;
     font-family: 'Courier New', Courier, monospace;
 
