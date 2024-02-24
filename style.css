@@ -202,7 +202,7 @@ canvas{
   }
   @media screen and (max-width: 768px) {
     canvas{
-        /* scale:1.1; */
+        scale:0.5;
         height:90%
     }
 }
