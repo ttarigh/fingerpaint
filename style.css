@@ -139,3 +139,9 @@ canvas{
     margin: 5px
 
 }
+
+@media screen and (max-width: 768px) {
+    canvas{
+        scale:1.5;
+    }
+}
