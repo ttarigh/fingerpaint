@@ -164,7 +164,7 @@ canvas{
     z-index: 9999; /* ensure it's above other content */
   }
   #titleTutorial{
-    padding: 20px 0 20px 0px;
+    padding: 0 0 10px 0px;
   }
   .lightbox-popup {
     display: none;
@@ -195,6 +195,9 @@ canvas{
     font-family: 'Courier New', Courier, monospace;
   }
 
+  #iamb{
+    max-width: 50%;
+  }
   @media screen and (max-width: 768px) {
     canvas{
         /* scale:1.1; */
