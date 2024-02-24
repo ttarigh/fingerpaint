@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: black;
+    background-color: none;
     overflow: hidden;
 }
 .input_video{
@@ -20,6 +20,26 @@ body{
 canvas{
     position: absolute;
 }
+#tutorial{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 97px;
+}
+#toArticle{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;;
+    border: 2px solid black;
+    border-radius: 97px;
+}
 #spinner{
     position: fixed;
     top: 50%;
@@ -34,6 +54,7 @@ canvas{
     padding:20px;
     border-radius:50px;
     border:none;
+    position: relative;
 }
 
 #orangeButton{
@@ -42,6 +63,7 @@ canvas{
     padding:20px;
     border-radius:50px;
     border:none;
+    position: relative;
 }
 
 #yellowButton{
@@ -50,6 +72,7 @@ canvas{
     padding:20px;
     border-radius:50px;
     border:none;
+    position: relative;
 }
 
 #greenButton{
@@ -58,6 +81,7 @@ canvas{
     padding:20px;
     border-radius:50px;
     border:none;
+    position: relative;
 }
 
 #blueButton{
@@ -66,6 +90,7 @@ canvas{
     padding:20px;
     border-radius:50px;
     border:none;
+    position: relative;
 }
 
 #purpleButton{
@@ -74,6 +99,7 @@ canvas{
     padding:20px;
     border-radius:50px;
     border:none;
+    position: relative;
 }
 #pinkButton{
     color: black;
@@ -81,6 +107,7 @@ canvas{
     padding:20px;
     border-radius:50px;
     border:none;
+    position: relative;
 }
 
 #blackButton{
@@ -89,6 +116,7 @@ canvas{
     padding:20px;
     border-radius:50px;
     border:2px solid white;
+    position: relative;
 }
 
 #whiteButton{
@@ -97,4 +125,6 @@ canvas{
     padding:20px;
     border-radius:50px;
     border:none;
+    position: relative;
+
 }
