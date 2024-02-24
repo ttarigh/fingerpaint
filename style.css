@@ -197,6 +197,7 @@ canvas{
 
   @media screen and (max-width: 768px) {
     canvas{
-        scale:1.1;
+        /* scale:1.1; */
+        height:90%
     }
 }
