@@ -474,6 +474,10 @@
     this.video = a;
     this.i = 0;
     this.h = Object.assign(Object.assign({}, M), b);
+    // Set additional video attributes for iOS compatibility
+    this.video.setAttribute("autoplay", "");
+    this.video.setAttribute("muted", "");
+    this.video.setAttribute("playsinline", "");
   }
   N.prototype.stop = function () {
     var a = this,
