@@ -24,35 +24,56 @@ videoElement.addEventListener("loadedmetadata", (e) => {
 
 document.getElementById("redButton").addEventListener("click", function () {
   color("red");
+  updateButtonStyle("redButton");
 });
 document.getElementById("orangeButton").addEventListener("click", function () {
   color("orange");
+  updateButtonStyle("orangeButton");
 });
 document.getElementById("yellowButton").addEventListener("click", function () {
   color("yellow");
+  updateButtonStyle("yellowButton");
 });
 document.getElementById("greenButton").addEventListener("click", function () {
   color("green");
+  updateButtonStyle("greenButton");
 });
 document.getElementById("blueButton").addEventListener("click", function () {
   color("blue");
+  updateButtonStyle("blueButton");
 });
 document.getElementById("purpleButton").addEventListener("click", function () {
   color("purple");
+  updateButtonStyle("purpleButton");
 });
 document.getElementById("pinkButton").addEventListener("click", function () {
   color("pink");
+  updateButtonStyle("pinkButton");
 });
 document.getElementById("blackButton").addEventListener("click", function () {
   color("black");
+  updateButtonStyle("blackButton");
 });
 document.getElementById("whiteButton").addEventListener("click", function () {
   color("white");
+  updateButtonStyle("whiteButton");
 });
 
 let octx = oc.getContext("2d");
 let dctx = dc.getContext("2d");
 let x, y, px, py;
+
+function updateButtonStyle(selectedButtonId) {
+  // Reset border for all buttons
+  const buttonIds = ["redButton", "orangeButton", "yellowButton", "greenButton", "blueButton", "purpleButton", "pinkButton", "blackButton", "whiteButton"];
+  buttonIds.forEach(buttonId => {
+    const button = document.getElementById(buttonId);
+    button.style.border = "none";
+  });
+  // Set border for selected button
+  const selectedButton = document.getElementById(selectedButtonId);
+  selectedButton.style.border = "2px dashed white";
+}
 
 function color(color) {
   if (color=="red"){

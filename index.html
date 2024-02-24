@@ -1,40 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <img id="spinner" src="loading_spinner.svg" alt="loading...">
-  <div class="dcontainer">
-    <video class="input_video"></video>
-    <div class="container">
-      <!-- <canvas style="display:none" class="output_canvas"></canvas> -->
-      <canvas class="output_canvas"></canvas>
-      <canvas id="draw"></canvas>
-      <canvas id="overlay"></canvas>
-      <div id="coloredButtons">
-        <button id="redButton"></button>
-        <button id="orangeButton"></button>
-        <button id="yellowButton"></button>
-        <button id="greenButton"></button>
-        <button id="blueButton"></button>
-        <button id="purpleButton"></button>
-        <button id="pinkButton"></button>
-        <button id="blackButton"></button>
-        <button id="whiteButton"></button>
+  <body>
+    <img id="spinner" src="loading_spinner.svg" alt="loading..." />
+    <div class="dcontainer">
+      <video class="input_video"></video>
+      <div class="container">
+        <!-- <canvas style="display:none" class="output_canvas"></canvas> -->
+        <canvas class="output_canvas"></canvas>
+        <canvas id="draw"></canvas>
+        <canvas id="overlay"></canvas>
+        <div id="coloredButtons">
+          <button id="redButton"></button>
+          <button id="orangeButton"></button>
+          <button id="yellowButton"></button>
+          <button id="greenButton"></button>
+          <button id="blueButton"></button>
+          <button id="purpleButton"></button>
+          <button id="pinkButton"></button>
+          <button id="blackButton"></button>
+          <button id="whiteButton"></button>
+        </div>
+      </div>
+      <button id="toArticle">The Issue</button>
+      <button id="tutorial">?</button>
+
+      <!-- Lightbox Popup -->
+      <div id="overlay1" class="overlay1"></div>
+
+      <div id="lightbox-popup" class="lightbox-popup">
+        <button id="close-btn" class="close-btn">&times;</button>
+        <div class="lightbox-content">
+          <h2 id="titleTutorial">How to Finger Paint</h2>
+          <p>Tap the  screen to select a color, then hold up your finger to the camera!</p>
+          <!-- <img id="QR" src="imgs/qrCode.png" alt="" /> -->
+        </div>
       </div>
     </div>
-    <button id="toArticle">The Issue</button>
-    <button id="tutorial">?</button>
-  </div>
 
-  <script src="camera_utils.js"></script>
-  <script src="drawing_utils.js"></script>
-  <script src="hands/hands.js"></script>
-  <script src="script.js"></script>
-</body>
-    
+    <script src="camera_utils.js"></script>
+    <script src="drawing_utils.js"></script>
+    <script src="hands/hands.js"></script>
+    <script src="script.js"></script>
+    <script>
+      document
+        .getElementById("toArticle")
+        .addEventListener("click", function () {
+          window.open("https://tina.zone", "_blank");
+        });
+      /// Popup
+      document.addEventListener("DOMContentLoaded", function () {
+        function showLightboxPopup() {
+          var lightboxPopup = document.getElementById("lightbox-popup");
+          var overlay = document.getElementById("overlay1");
+          lightboxPopup.style.display = "block";
+          overlay.style.display = "block";
+
+          var closeButton = document.getElementById("close-btn");
+
+          closeButton.addEventListener("click", function () {
+            lightboxPopup.style.display = "none";
+            overlay.style.display = "none";
+          });
+        }
+
+        showLightboxPopup(); // Invocation of the function
+      });
+
+      // TOGGLE BUTTON
+      document.addEventListener("DOMContentLoaded", function () {
+        var toggleButton = document.getElementById("tutorial");
+        var shadowBox = document.getElementById("lightbox-popup");
+        var overlay = document.getElementById("overlay1");
+
+        function toggleShadowBox() {
+          shadowBox.style.display =
+            shadowBox.style.display === "block" ? "none" : "block";
+          overlay.style.display =
+            overlay.style.display === "block" ? "none" : "block";
+        }
+        toggleButton.addEventListener("click", toggleShadowBox);
+      });
+    </script>
+  </body>
 </html>
