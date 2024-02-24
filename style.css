@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    overflow: hidden;
+}
+.input_video{
+      display: none;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+canvas{
+    position: absolute;
+}
+#spinner{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#redButton{
+    color: white;
+    background-color: red;
+    padding:20px;
+    border-radius:50px;
+    border:none;
+}
+
+#orangeButton{
+    color: white;
+    background-color: orange;
+    padding:20px;
+    border-radius:50px;
+    border:none;
+}
+
+#yellowButton{
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+    padding:20px;
+    border-radius:50px;
+    border:none;
+}
+
+#greenButton{
+    color: white;
+    background-color: green;
+    padding:20px;
+    border-radius:50px;
+    border:none;
+}
+
+#blueButton{
+    color: white;
+    background-color: blue;
+    padding:20px;
+    border-radius:50px;
+    border:none;
+}
+
+#purpleButton{
+    color: white;
+    background-color: purple;
+    padding:20px;
+    border-radius:50px;
+    border:none;
+}
+#pinkButton{
+    color: black;
+    background-color: pink;
+    padding:20px;
+    border-radius:50px;
+    border:none;
+}
+
+#blackButton{
+    color:white;
+    background-color: black;
+    padding:20px;
+    border-radius:50px;
+    border:2px solid white;
+}
+
+#whiteButton{
+    color: black;
+    background-color: white;
+    padding:20px;
+    border-radius:50px;
+    border:none;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <img id="spinner" src="loading_spinner.svg" alt="loading...">
+  <div class="dcontainer">
+    <button id="redButton">RED</button>
+    <button id="orangeButton">ORANGE</button>
+    <button id="yellowButton">YELLOW</button>
+    <button id="greenButton">GREEN</button>
+    <button id="blueButton">BLUE</button>
+    <button id="purpleButton">PURPLE</button>
+    <button id="pinkButton">PINK</button>
+    <button id="blackButton">BLACK</button>
+    <button id="whiteButton">WHITE</button>
+
+
+    <video class="input_video"></video>
+    <div class="container">
+      <!-- <canvas style="display:none" class="output_canvas"></canvas> -->
+      <canvas class="output_canvas"></canvas>
+      <canvas id="draw"></canvas>
+      <canvas id="overlay"></canvas>
+    </div>
+  </div>
+
+  <script src="camera_utils.js"></script>
+  <script src="drawing_utils.js"></script>
+  <script src="hands/hands.js"></script>
+  <script src="script.js"></script>
+</body>
+    
+</html>
