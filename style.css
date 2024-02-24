@@ -55,6 +55,7 @@ canvas{
     border-radius:50px;
     border:none;
     position: relative;
+    margin: 5px
 }
 
 #orangeButton{
@@ -64,6 +65,7 @@ canvas{
     border-radius:50px;
     border:none;
     position: relative;
+    margin: 5px
 }
 
 #yellowButton{
@@ -73,6 +75,7 @@ canvas{
     border-radius:50px;
     border:none;
     position: relative;
+    margin: 5px
 }
 
 #greenButton{
@@ -82,6 +85,7 @@ canvas{
     border-radius:50px;
     border:none;
     position: relative;
+    margin: 5px
 }
 
 #blueButton{
@@ -91,6 +95,7 @@ canvas{
     border-radius:50px;
     border:none;
     position: relative;
+    margin: 5px
 }
 
 #purpleButton{
@@ -100,6 +105,7 @@ canvas{
     border-radius:50px;
     border:none;
     position: relative;
+    margin: 5px
 }
 #pinkButton{
     color: black;
@@ -108,6 +114,8 @@ canvas{
     border-radius:50px;
     border:none;
     position: relative;
+    margin: 5px
+
 }
 
 #blackButton{
@@ -115,8 +123,9 @@ canvas{
     background-color: black;
     padding:20px;
     border-radius:50px;
-    border:2px solid white;
+    border:none;
     position: relative;
+    margin: 5px
 }
 
 #whiteButton{
@@ -126,5 +135,6 @@ canvas{
     border-radius:50px;
     border:none;
     position: relative;
+    margin: 5px
 
 }
