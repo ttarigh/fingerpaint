@@ -29,6 +29,7 @@
       </div>
       <button id="toArticle">The Issue</button>
       <button id="tutorial">?</button>
+      <img id="xrpic" src="XRpic.png" />
 
       <!-- Lightbox Popup -->
       <div id="overlay1" class="overlay1"></div>
@@ -36,10 +37,12 @@
       <div id="lightbox-popup" class="lightbox-popup">
         <button id="close-btn" class="close-btn">&times;</button>
         <div class="lightbox-content">
-          <img id="iamb" src="iambLogo.png" alt="">
+          <img id="iamb" src="iambLogo.png" alt="" />
           <h2 id="titleTutorial">How to Finger Paint</h2>
-          <p>Tap the  screen to select a color, then hold up your finger to the camera!</p>
-          <!-- <img id="QR" src="imgs/qrCode.png" alt="" /> -->
+          <p>
+            Tap the screen to select a color, then hold up your finger to the
+            camera!
+          </p>
         </div>
       </div>
     </div>
@@ -49,6 +52,11 @@
     <script src="hands/hands.js"></script>
     <script src="script.js"></script>
     <script>
+      document
+        .getElementById("xrpic")
+        .addEventListener("click", function () {
+          window.open("https://work.tina.zone", "_blank");
+        });
       document
         .getElementById("toArticle")
         .addEventListener("click", function () {

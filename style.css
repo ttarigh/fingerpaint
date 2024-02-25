@@ -168,6 +168,13 @@ canvas{
   #titleTutorial{
     padding: 0 0 10px 0px;
   }
+  #xrpic{
+    position:absolute;
+    bottom: 12px;
+    left: 60px;
+    max-height: 8%;
+  }
+
   .lightbox-popup {
     display: none;
     position: fixed;
@@ -202,7 +209,6 @@ canvas{
   }
   @media screen and (max-width: 768px) {
     canvas{
-        scale:0.5;
-        height:90%
+        height:100%
     }
 }
