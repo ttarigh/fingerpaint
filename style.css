@@ -37,10 +37,12 @@ canvas{
 #tutorial:hover{
     color:red;
     border-color:red;
+    cursor:pointer;
 }
 #toArticle:hover{
     color:red;
     border-color:red;
+    cursor:pointer;
 }
 #toArticle{
     position: absolute;
