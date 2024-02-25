@@ -124,7 +124,7 @@ canvas{
 }
 #pinkButton{
     color: black;
-    background-color: pink;
+    background-color:#FF00DB;
     padding:20px;
     border-radius:50px;
     border:none;

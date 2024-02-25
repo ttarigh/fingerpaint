@@ -101,8 +101,8 @@ function color(color) {
     dctx.strokeStyle = "#800080";
   }
   if (color=="pink"){
-    ctx.fillStyle = "#FFC0CB";
-    dctx.strokeStyle = "#FFC0CB";
+    ctx.fillStyle = "#FF00DB";
+    dctx.strokeStyle = "#FF00DB";
   }
   if (color=="black"){
     ctx.fillStyle = "#000000";
