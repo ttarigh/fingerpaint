@@ -12,7 +12,7 @@
       <video class="input_video"></video>
       <div class="container">
         <!-- <canvas style="display:none" class="output_canvas"></canvas> -->
-        <canvas class="output_canvas"></canvas>
+        <canvas class="output_canvas" style="object-fit: cover;"></canvas>
         <canvas id="draw"></canvas>
         <canvas id="overlay"></canvas>
         <div id="coloredButtons">
@@ -41,7 +41,7 @@
           <h2 id="titleTutorial">How to Finger Paint</h2>
           <p>
             Click the bubbles to select a color, then hold up your finger to the
-            camera to start drawing ! 
+            camera to start drawing !
           </p>
         </div>
       </div>
@@ -52,15 +52,13 @@
     <script src="hands/hands.js"></script>
     <script src="script.js"></script>
     <script>
-      document
-        .getElementById("xrpic")
-        .addEventListener("click", function () {
-          window.open("https://work.tina.zone", "_blank");
-        });
+      document.getElementById("xrpic").addEventListener("click", function () {
+        window.open("https://work.tina.zone", "_blank");
+      });
       document
         .getElementById("toArticle")
         .addEventListener("click", function () {
-          window.open("https://tina.zone", "_blank");
+          window.location.href = "https://fliphtml5.com/wsrys/bvnn/";
         });
       /// Popup
       document.addEventListener("DOMContentLoaded", function () {

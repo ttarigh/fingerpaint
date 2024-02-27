@@ -181,3 +181,4 @@ const camera = new Camera(videoElement, {
   height: h,
 });
 camera.start();
+
