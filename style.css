@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+button{
+    cursor:pointer;
+}
 body{
     background-color: none;
     overflow: hidden;
@@ -37,10 +40,12 @@ canvas{
 #tutorial:hover{
     color:red;
     border-color:red;
+    cursor:pointer;
 }
 #toArticle:hover{
     color:red;
     border-color:red;
+    cursor:pointer;
 }
 #toArticle{
     position: absolute;
@@ -175,6 +180,9 @@ button{
     left: 60px;
     max-height: 8%;
   }
+#xrpic:hover{
+    cursor:pointer;
+}
 
   .lightbox-popup {
     display: none;
