@@ -13,8 +13,22 @@
       <video class="input_video"></video>
       <div class="container">
         <!-- <canvas style="display:none" class="output_canvas"></canvas> -->
-        <canvas class="output_canvas" style="object-fit: cover;"></canvas>
-        <canvas id="draw"></canvas>
+        <canvas
+          class="output_canvas"
+          style="
+            /* object-fit: cover; */
+            object-fit: cover;
+            object-position: center;
+          "
+          width="657"
+          height="393"
+        ></canvas>
+        <canvas
+          id="draw"
+          width="657"
+          height="393"
+          style="object-fit: cover; object-position: center"
+        ></canvas>
         <canvas id="overlay"></canvas>
         <div id="coloredButtons">
           <button id="redButton"></button>
